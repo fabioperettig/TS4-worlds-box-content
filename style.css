@@ -110,3 +110,77 @@ h3 a:hover{
     position: absolute;
     z-index: 1;
 }
+
+@media screen and (min-width:601px) and (max-width:1200px) { 
+    .head {
+        margin-bottom: 4rem;
+    }
+    .main {
+        display: grid;
+        grid-template-areas: "01 02" "03 04";
+        position: relative;
+        height: 90vh;
+        text-decoration: none;
+    }
+
+    #01 {
+        grid-area: 01;
+    }
+
+    #02 {
+        grid-area: 02;
+    }
+
+    #03 {
+        grid-area: 03;
+    }
+
+    #04 {
+        grid-area: 04;
+    }
+
+    h3 {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width:600px) { 
+    .head {
+        margin-bottom: 4rem;
+    }
+    .main {
+        display: grid;
+        grid-template-areas: "01" "02" "03" "04";
+        position: relative;
+        height: 90vh;
+        text-decoration: none;
+    }
+
+    .box {
+        width: 20rem;
+    }
+
+    img {
+        width: 20rem;
+    }
+
+    #01 {
+        grid-area: 01;
+    }
+
+    #02 {
+        grid-area: 02;
+    }
+
+    #03 {
+        grid-area: 03;
+    }
+
+    #04 {
+        grid-area: 04;
+    }
+
+    h3 {
+        margin-top: 45rem;
+    }
+}
